@@ -1,0 +1,298 @@
+.body-blog {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(203, 203, 203);
+  margin: 0;
+}
+nav {
+  background-color: rgb(228, 228, 228);
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 20px;
+}
+nav ul li {
+  margin-right: 20px;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.btn-contact {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 7px;
+  font-size: medium;
+}
+.btn-submit {
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: small;
+}
+.card {
+  width: auto;
+  margin: 20px 50px;
+  padding: 20px 50px;
+  box-shadow: 1px 2px 8px rgb(179, 167, 167);
+  border-radius: 10px;
+  background-color: rgb(255, 244, 244);
+}
+.container-index {
+  padding: 0 48px;
+  margin: auto;
+  font-size: medium;
+}
+/* button*/
+.contact-btn {
+  width: 50%;
+  margin: 10px 0px 0px 50px;
+  display: flex;
+  align-items: center;
+}
+.contact-btn .card-contact-btn {
+  text-decoration: none;
+  padding: 8px;
+  background: black;
+  color: white;
+  border-radius: 16px;
+  outline: none;
+  font-size: small;
+}
+.contact-btn .cv-btn {
+  color: black;
+  text-decoration: none;
+  padding-left: 10px;
+  margin-left: 15px;
+  font-size: small;
+}
+.contact-btn .cv-btn img {
+  width: 15px;
+}
+.sm-btn {
+  display: flex;
+  text-decoration: none;
+  width: 30px;
+  margin: 10px 0px 0px 25px;
+}
+.card-profile {
+  margin: 20px 50px;
+  width: 200px;
+  background: white;
+  box-shadow: 0 10px 50px -15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-profile img {
+  margin: 0;
+  width: 200px;
+  border-radius: 10px 10px 0px 0px;
+}
+.card-profile h3 {
+  margin: auto;
+  text-align: center;
+}
+.card-profile p {
+  margin: auto;
+  text-align: center;
+}
+
+/* contact*/
+.contact {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0;
+}
+.contact form {
+  width: 300px;
+}
+.contact h2 {
+  text-align: center;
+}
+.contact form input {
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: rgb(235, 235, 235);
+  padding: 5px;
+  margin-top: 5px;
+}
+.contact form select {
+  width: 100%;
+  border-color: rgb(83, 83, 83);
+  box-sizing: border-box;
+  background-color: rgb(235, 235, 235);
+  border-radius: 8px;
+  padding: 5px;
+  margin-top: 5px;
+}
+.contact form textarea {
+  width: 100%;
+  border-color: rgb(83, 83, 83);
+  background-color: rgb(235, 235, 235);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-top: 5px;
+  height: 100px;
+  resize: none;
+}
+/* contact*/
+
+/* blog*/
+.blog {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0;
+}
+.blog form {
+  width: 300px;
+}
+.blog h2 {
+  text-align: center;
+}
+.blog form input {
+  width: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: beige;
+  padding: 5px;
+  margin-top: 5px;
+}
+.blog .date {
+  display: flex;
+}
+.blog form .input-blog-image {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: beige;
+  padding: 0;
+  margin-top: 5px;
+}
+.blog form .input-blog-image img {
+  width: 20px;
+  display: flex;
+}
+.blog form .input-blog-image label p {
+  font-size: 15px;
+}
+.blog form .input-blog-image label {
+  margin: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog .boxlist {
+  width: auto;
+}
+.blog .boxlist .checklist {
+  width: 30px;
+  margin-bottom: 10px;
+}
+.blog form select {
+  width: 100%;
+  border-color: rgb(83, 83, 83);
+  box-sizing: border-box;
+  background-color: beige;
+  border-radius: 8px;
+  padding: 5px;
+  margin-top: 5px;
+}
+.blog form textarea {
+  width: 100%;
+  border-color: rgb(83, 83, 83);
+  background-color: beige;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-top: 5px;
+  height: 100px;
+  resize: none;
+}
+/* blog card*/
+hr {
+  border: white;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  gap: 50px;
+  position: relative;
+  background-color: white;
+}
+.blog-card {
+  background-color: beige;
+  margin: 20px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 2px 2px 0 black;
+  width: 200px;
+  height: 350px;
+  display: flex;
+  position: relative;
+}
+
+.blog-card .blog-list-item .blog-image img {
+  width: 180px;
+  height: 120px;
+  margin: 10px 10px 0px 10px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.blog-card .blog-list-item .blog-content {
+  padding-left: 10px;
+}
+.blog-card .blog-list-item .blog-content h2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+.blog-card .blog-list-item .detail-blog-content {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 0px;
+}
+.blog-card .blog-list-item p {
+  font-weight: 100px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: justify;
+  margin-right: 20px;
+}
+.blog-card .blog-list-item .btn-group {
+  display: flex;
+}
+.blog-card .blog-list-item .btn-group .btn-edit {
+  width: 40%;
+  height: 25px;
+  border-radius: 12px;
+  background: black;
+  color: white;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.blog-card .blog-list-item .btn-group .btn-post {
+  width: 40%;
+  height: 25px;
+  border-radius: 12px;
+  background: black;
+  color: white;
+  font-size: 12px;
+}

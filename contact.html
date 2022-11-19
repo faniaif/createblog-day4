@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard Fania</title>
+  </head>
+  <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0">
+    <!--navbar section-->
+    <nav>
+      <ul>
+        <li>
+          <a href=""> <img src="image/logo.png" style="width: 50px; margin-left: 30px" /></a>
+        </li>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="blog.html" style="color: orangered"> Project</a></li>
+        <li style="width: 100%; display: flex; justify-content: flex-end"><a href="contact.html" class="btn-contact"> Contact me</a></li>
+      </ul>
+    </nav>
+    <!--end of nav-->
+    <div class="contact">
+      <form>
+        <h2>GET IN TOUCH</h2>
+        <div>
+          <label> Name </label>
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <label> Email </label>
+          <input type="text" id="email" />
+        </div>
+        <div>
+          <label> Phone Number </label>
+          <input type="number" id="phone" />
+        </div>
+        <div>
+          <label> Subject </label>
+          <select title="click here" id="subject">
+            <option></option>
+            <option>Portfolio</option>
+            <option>Project</option>
+            <option>Collaboration</option>
+          </select>
+        </div>
+        <div>
+          <label> Your Message </label>
+          <textarea id="message"></textarea>
+        </div>
+        <div style="display: flex; justify-content: flex-end">
+          <button type="button" class="btn-submit" onclick="submitData()">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="contact.js"></script>
+  </body>
+</html>

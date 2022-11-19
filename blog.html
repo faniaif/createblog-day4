@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <title>Dashboard Fania</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body-blog">
+    <!--navbar section-->
+    <nav>
+      <ul>
+        <li>
+          <a href=""> <img src="image/logo.png" style="width: 50px; margin-left: 30px" /></a>
+        </li>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="blog.html" style="color: orangered"> Project</a></li>
+        <li style="width: 100%; display: flex; justify-content: flex-end"><a href="contact.html" class="btn-contact"> Contact me</a></li>
+      </ul>
+    </nav>
+    <div class="blog">
+      <form onsubmit="addData(event)">
+        <h2>ADD MY PROJECT</h2>
+        <div>
+          <label for="input-blog-title">Project Name</label>
+          <input type="text" id="input-blog-title" />
+        </div>
+        <div class="date">
+          <div class="start">
+            <label> Start Date </label>
+            <input type="date" id="start" />
+          </div>
+          <div class="end">
+            <label> End Date </label>
+            <input type="date" id="end" />
+          </div>
+        </div>
+        <div>
+          <label for="input-blog-content"> Description </label>
+          <textarea id="input-blog-content"></textarea>
+        </div>
+        <!--check box-->
+        <div class="boxlist">
+          <label> Technologies </label>
+          <div><input id="node" type="checkbox" name="node1" value="Node Js" class="checklist" /> Node JS <input id="next" type="checkbox" name="next1" value="Next Js" class="checklist" /> Next JS</div>
+          <div><input id="react" type="checkbox" name="react1" value="React Js" class="checklist" /> React JS <input id="typescript" type="checkbox" name="text" value="Node Js" class="checklist" /> Typescript</div>
+        </div>
+        <!--attachment-->
+        <div>
+          <label>Upload Image</label>
+          <div class="input-blog-image">
+            <label for="input-blog-image">
+              <p>Attach File</p>
+              <img src="image/attach.png" alt="file" />
+            </label>
+            <input type="file" id="input-blog-image" hidden />
+          </div>
+        </div>
+        <div style="display: flex; justify-content: flex-end">
+          <button class="btn-submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!--card -->
+    <hr />
+    <div id="contents" class="blog-list">
+      <div class="container">
+        <div class="blog-card">
+          <div class="blog-list-item">
+            <div class="blog-image">
+              <img src="image/node js.png" alt="" />
+            </div>
+            <div class="blog-content">
+              <h2>
+                <a href="#" target="_blank">Learn Node Js</a>
+              </h2>
+              <div class="detail-blog-content">duration : 3 hours</div>
+              <p>Let's learn Node Js! Complete node.js tutorial for beginners: introduction of node js, express framework, express routing, serving static files, body-parser.</p>
+              <div class="btn-group">
+                <button class="btn-edit">Edit Post</button>
+                <button class="btn-post">Post Blog</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card" id="contents" class="blog-list">
+          <div class="blog-list-item">
+            <div class="blog-image">
+              <img src="image/react.png" alt="" />
+            </div>
+            <div class="blog-content">
+              <h2>
+                <a href="#" target="_blank">Learn React Js</a>
+              </h2>
+              <div class="detail-blog-content">duration : 3 hours</div>
+              <p>Let's learn React Js! React is a declarative, efficient, and flexible JavaScript library for building user interfaces.</p>
+              <div class="btn-group">
+                <button class="btn-edit">Edit Post</button>
+                <button class="btn-post">Post Blog</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card" id="contents" class="blog-list">
+          <div class="blog-list-item">
+            <div class="blog-image">
+              <img src="image/Next Js.png" alt="" />
+            </div>
+            <div class="blog-content">
+              <h2>
+                <a href="#" target="_blank">Learn Next Js</a>
+              </h2>
+              <div class="detail-blog-content">duration : 3 hours</div>
+              <p>Let's learn Next Js! Next.js is a JavaScript framework created by Zeit. It lets you build server-side rendering and static web applications using React.</p>
+              <div class="btn-group">
+                <button class="btn-edit">Edit Post</button>
+                <button class="btn-post">Post Blog</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card" id="contents" class="blog-list">
+          <div class="blog-list-item">
+            <div class="blog-image">
+              <img src="image/typescript.png" alt="" />
+            </div>
+            <div class="blog-content">
+              <h2>
+                <a href="#" target="_blank">Learn TypeScript</a>
+              </h2>
+              <div class="detail-blog-content">duration : 3 hours</div>
+              <p>Let's learn Typescript! TypeScript is a strongly typed, object oriented, compiled language. It was designed by Anders Hejlsberg (designer of C#) at Microsoft.</p>
+              <div class="btn-group">
+                <button class="btn-edit">Edit Post</button>
+                <button class="btn-post">Post Blog</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="blog.js"></script>
+  </body>
+</html>
